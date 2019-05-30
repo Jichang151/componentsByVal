@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Parent from '@/components/Parent'
+import NewParent from '@/components/newParent'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+    routes: [{
+            path: '/',
+            name: 'Parent',
+            component: Parent
+        },
+        {
+            path: '/newParent',
+            name: 'NewParent',
+            component: NewParent
+        }
+    ]
 })
